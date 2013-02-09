@@ -58,7 +58,8 @@ Vagrant::Config.run do |config|
     }
 
     chef.run_list = [
-      "recipe[chef-repo::default]"
+      "recipe[vim::default]",
+      "recipe[git::default]"
     ]
   end
 end
